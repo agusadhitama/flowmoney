@@ -1,8 +1,8 @@
-# 💸 FlowMoney - Smart Finance Tracker
+# FlowMoney - Smart Finance Tracker
 
 > Track your money. Control your life.
 
-🌐 **Live Demo:** https://agusadhitama.github.io/flowmoney/
+**Live Demo:** https://agusadhitama.github.io/flowmoney/
 
 ---
 
@@ -86,7 +86,7 @@ index.html
 
 ## ⭐ Support
 
-Kalau kamu suka project ini:
+Kalau kamu suka project ini :
 - 👉🏾 kasih ⭐ di repo ini
 - 👉🏾 share ke teman / LinkedIn
 
