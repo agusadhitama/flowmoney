@@ -87,8 +87,8 @@ index.html
 ## ⭐ Support
 
 Kalau kamu suka project ini:
-👉🏾 kasih ⭐ di repo ini
-👉🏾 share ke teman / LinkedIn
+- 👉🏾 kasih ⭐ di repo ini
+- 👉🏾 share ke teman / LinkedIn
 
 ---
 
