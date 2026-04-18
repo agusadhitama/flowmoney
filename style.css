@@ -1,0 +1,300 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* BODY */
+body {
+  display: flex;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: #e2e8f0;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 240px;
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-right: 1px solid rgba(255,255,255,0.05);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+  color: #22c55e;
+  margin-bottom: 30px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar li:hover,
+.sidebar .active {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+}
+
+/* MAIN */
+.main-content {
+  flex: 1;
+  padding: 25px;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  font-size: 24px;
+}
+
+.user-info {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 15px;
+  background: rgba(30, 41, 59, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-bottom: 10px;
+  opacity: 0.7;
+}
+
+.card p {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* COLOR VARIANTS */
+.income {
+  border-left: 5px solid #22c55e;
+}
+
+.expense {
+  border-left: 5px solid #ef4444;
+}
+
+.balance {
+  border-left: 5px solid #3b82f6;
+}
+
+/* FORM */
+.form-section {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.form-grid input,
+.form-grid select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #0f172a;
+  color: white;
+}
+
+.form-grid button {
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-grid button:hover {
+  background: #16a34a;
+}
+
+/* TRANSACTIONS */
+.transactions {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.transactions ul {
+  list-style: none;
+}
+
+.transactions li {
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  background: #0f172a;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.2s;
+}
+
+.transactions li:hover {
+  background: #1e293b;
+}
+
+/* ANALYTICS */
+.analytics {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+/* TIMELINE */
+.timeline {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.timeline-item {
+  padding: 10px;
+  border-left: 3px solid #22c55e;
+  margin-bottom: 10px;
+}
+
+.timeline-item small {
+  display: block;
+  opacity: 0.6;
+}
+
+/* GOALS */
+.goals {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.goal-card {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  background: #0f172a;
+  border-radius: 10px;
+  height: 10px;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #22c55e, #4ade80);
+}
+
+/* NOTIFICATIONS */
+.notifications {
+  background: rgba(30, 41, 59, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.notif {
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px 0;
+}
+
+.success {
+  background: rgba(34, 197, 94, 0.2);
+}
+
+.warning {
+  background: rgba(234, 179, 8, 0.2);
+}
+
+.info {
+  background: rgba(59, 130, 246, 0.2);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0.5;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #1e293b;
+  margin: 10% auto;
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #22c55e;
+  border-radius: 10px;
+}

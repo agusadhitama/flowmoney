@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMoney - Smart Finance Tracker</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2 class="logo">FlowMoney</h2>
+    <nav>
+      <ul>
+        <li class="active">Dashboard</li>
+        <li>Transactions</li>
+        <li>Analytics</li>
+        <li>Settings</li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main-content">
+
+    <!-- Header -->
+    <header class="header">
+      <h1>Dashboard</h1>
+      <div class="user-info">
+        <span>Welcome, Adhit</span>
+      </div>
+    </header>
+
+    <!-- Balance Cards -->
+    <section class="cards">
+      <div class="card income">
+        <h3>Total Income</h3>
+        <p id="income">Rp 0</p>
+      </div>
+
+      <div class="card expense">
+        <h3>Total Expense</h3>
+        <p id="expense">Rp 0</p>
+      </div>
+
+      <div class="card balance">
+        <h3>Balance</h3>
+        <p id="balance">Rp 0</p>
+      </div>
+    </section>
+
+    <!-- Transaction Form -->
+    <section class="form-section">
+      <h2>Add Transaction</h2>
+
+      <div class="form-grid">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+
+        <select id="category">
+          <option>Food</option>
+          <option>Transport</option>
+          <option>Entertainment</option>
+          <option>Shopping</option>
+          <option>Other</option>
+        </select>
+
+        <select id="type">
+          <option value="income">Income</option>
+          <option value="expense">Expense</option>
+        </select>
+
+        <button onclick="addTransaction()">Add</button>
+      </div>
+    </section>
+
+    <!-- Transactions List -->
+    <section class="transactions">
+      <h2>Recent Transactions</h2>
+      <ul id="list"></ul>
+    </section>
+
+    <!-- Analytics -->
+    <section class="analytics">
+      <h2>Analytics</h2>
+      <canvas id="chart"></canvas>
+    </section>
+
+    <!-- Activity Timeline -->
+    <section class="timeline">
+      <h2>Activity Timeline</h2>
+
+      <div class="timeline-item">
+        <span>Salary Received</span>
+        <small>Today</small>
+      </div>
+
+      <div class="timeline-item">
+        <span>Bought Food</span>
+        <small>Yesterday</small>
+      </div>
+
+      <div class="timeline-item">
+        <span>Entertainment Expense</span>
+        <small>2 days ago</small>
+      </div>
+
+    </section>
+
+    <!-- Goals Section -->
+    <section class="goals">
+      <h2>Financial Goals</h2>
+
+      <div class="goal-card">
+        <h3>Buy Laptop</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 40%"></div>
+        </div>
+      </div>
+
+      <div class="goal-card">
+        <h3>Emergency Fund</h3>
+        <div class="progress-bar">
+          <div class="progress" style="width: 65%"></div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Notification Panel -->
+    <section class="notifications">
+      <h2>Notifications</h2>
+
+      <div class="notif success">Income added successfully</div>
+      <div class="notif warning">High spending detected</div>
+      <div class="notif info">New update available</div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 FlowMoney</p>
+      <p>by Agus Satria Adhitama</p>
+    </footer>
+
+  </main>
+
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Transaction Details</h2>
+      <p id="modal-data"></p>
+    </div>
+  </div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+
+</body>
+</html>
