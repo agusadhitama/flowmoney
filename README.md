@@ -45,7 +45,7 @@ Project ini cocok sebagai :
 
 ## 📸 Preview
 
-![FlowMoney Preview](https://via.placeholder.com/800x400?text=FlowMoney+Preview)
+![FlowMoney Preview](./preview.JPG)
 
 ---
 
